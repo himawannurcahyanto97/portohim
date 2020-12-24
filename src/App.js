@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ScrollToTop from "./component/ScrollToTop";
 import Navbar from "./component/Navbar";
 import Home from "./pages";
+import ExpPage from "./pages/ExpPage"
 import Footer from "./component/Foot";
 import "./App.css";
-import ScrollToTop from "./component/ScrollToTop";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,6 +18,7 @@ function App() {
       <ScrollToTop />
       <Switch>
         <Route path="/" component={Home} exact />
+        <Route path="/experience" component={ExpPage} exact />
       </Switch>
       <Footer />
     </Router>

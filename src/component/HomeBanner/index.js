@@ -1,12 +1,13 @@
 import React from "react";
-import Hima from "../../images/Hima.png"
-import { GlobalContent } from "../GlobalContent"
-import { IntroPart, Intro, Homebtn, Img, ImgPart, HomeContent } from "./style"
+import Hima from "../../images/Hima.png";
+import { GlobalContent } from "../GlobalContent";
+import { Homebtn } from "./style";
+import {Banner, IntroPart, Intro, Img, ImgPart} from "../BannerStyle"
 
 const HomeBanner = () => {
     return(
         <GlobalContent>
-            <HomeContent>
+            <Banner>
                 <IntroPart>
                     <Intro>HELLO! MY NAME IS</Intro>
                     <Intro big normal >Himawan Nurcahyanto</Intro>
@@ -16,7 +17,7 @@ const HomeBanner = () => {
                 <ImgPart>
                     <Img src={Hima} />
                 </ImgPart>
-            </HomeContent>
+            </Banner>
         </GlobalContent>
     );
 };

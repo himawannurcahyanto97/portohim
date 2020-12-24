@@ -1,7 +1,6 @@
 import React from "react";
 import {GlobalContent} from "../../GlobalContent";
 import { TitleHomeContent, Viewedin} from "../style";
-import Land from "../../../images/Land.png";
 import {GalleryData} from "./content";
 import { BsFillCaretRightFill } from "react-icons/bs";
 import {
@@ -9,9 +8,9 @@ import {
     GalleryImage
 } from "./style";
 
-const ManageGalleryData = ({id}) => {
+const ManageGalleryData = ({images}) => {
     return(
-        <GalleryImage src = {Land} alt ={id} />
+        <GalleryImage src = {images} alt= {images}/>
     );
 };
 
@@ -26,7 +25,8 @@ const GalleryContent = () => {
                 {GalleryData.map((data, idx) => (
                 <ManageGalleryData
                     key={idx}
-                    id={data.id}
+                    images={data.img}
+                    alt={data.img}
                 />
                 ))}
             </GalleryContainer>

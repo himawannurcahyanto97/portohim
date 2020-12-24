@@ -16,7 +16,7 @@ export const YTPictPart = styled.div`
 `;
 
 export const YTPict = styled.img`
-    width: 138px;
+    width: 117px;
     border-radius: 50%;
     justify: center;
 `;
