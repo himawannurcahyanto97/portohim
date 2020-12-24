@@ -5,9 +5,9 @@ import YouTube from "react-youtube";
 import {YTContainer, YTProfile, YTName, YTPict, Visit, YTPictPart} from "./style";
 import { BsFillCaretRightFill } from "react-icons/bs";
 
-const API = process.env.REACT_APP_API_KEY;
-var profileURL = `https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=UCK_2UEc-JfIKDtWEy1_IK9g&key=${API}`;
-var videoURL = `https://www.googleapis.com/youtube/v3/search?key=${API}&channelId=UCK_2UEc-JfIKDtWEy1_IK9g&maxResults=1&order=date&part=snippet`;
+const API_KEY = 'AIzaSyD3vmpdTpAYn5F0G0k54LTZnFWjTCxaI54';
+var profileURL = `https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=UCK_2UEc-JfIKDtWEy1_IK9g&key=${API_KEY}`;
+var videoURL = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=UCK_2UEc-JfIKDtWEy1_IK9g&maxResults=1&order=date&part=snippet`;
 
 const YouTubeContent = () => {
     const [pict, setPict] = useState();
