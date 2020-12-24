@@ -4,10 +4,9 @@ import { TitleHomeContent } from "../style";
 import YouTube from "react-youtube";
 import {YTContainer, YTProfile, YTName, YTPict, Visit, YTPictPart} from "./style";
 import { BsFillCaretRightFill } from "react-icons/bs";
+import axios from "axios";
 
-console.log(process.env);
-const API = process.env.REACT_APP_API_KEY;
-console.log(API);
+const API = 'AIzaSyDnbbJ7KEvlwMEgNpPoAqoqygztWJ7e2ao';
 var profileURL = `https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=UCK_2UEc-JfIKDtWEy1_IK9g&key=${API}`;
 var videoURL = `https://www.googleapis.com/youtube/v3/search?key=${API}&channelId=UCK_2UEc-JfIKDtWEy1_IK9g&maxResults=1&order=date&part=snippet`;
 
@@ -15,10 +14,8 @@ const YouTubeContent = () => {
     const [pict, setPict] = useState();
     const [name, setName] = useState();
     const [video, setVideo] = useState();
-
-    require('dotenv').config();
     
-    fetch(profileURL)
+    axios.get(profileURL)
         .then((response) => response.json())
         .then((responseJson) => {
         var ProfilePict = responseJson.items.map(obj => obj.snippet.thumbnails.medium.url);
@@ -32,7 +29,7 @@ const YouTubeContent = () => {
             return(error)
         });
 
-    fetch(videoURL)
+    axios.get(videoURL)
         .then((response) => response.json())
         .then((responseJson) => {
         var LatestVideo = responseJson.items.map(obj => obj.id.videoId);
