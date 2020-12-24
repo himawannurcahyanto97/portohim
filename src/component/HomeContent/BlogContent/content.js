@@ -14,7 +14,7 @@ export const BlogData = [
         description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis et lectus tellus mi varius commodo nulla.',
     },
     {
-        img: Train,
+        img: Alumni,
         title: 'KOREA SCIENCE AND TECHNOLOGY ALUMNI GATHERING 2019',
         description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis et lectus tellus mi varius commodo nulla.',
     },
@@ -29,7 +29,7 @@ export const BlogData = [
         description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis et lectus tellus mi varius commodo nulla.',
     },
     {
-        img: Train,
+        img: Alumni,
         title: 'KOREA SCIENCE AND TECHNOLOGY ALUMNI GATHERING 2019',
         description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis et lectus tellus mi varius commodo nulla.',
     },
