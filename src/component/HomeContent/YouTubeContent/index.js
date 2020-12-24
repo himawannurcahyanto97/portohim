@@ -4,7 +4,6 @@ import { TitleHomeContent } from "../style";
 import YouTube from "react-youtube";
 import {YTContainer, YTProfile, YTName, YTPict, Visit, YTPictPart} from "./style";
 import { BsFillCaretRightFill } from "react-icons/bs";
-import axios from "axios";
 
 const API = process.env.REACT_APP_API_KEY;
 var profileURL = `https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=UCK_2UEc-JfIKDtWEy1_IK9g&key=${API}`;
@@ -15,7 +14,7 @@ const YouTubeContent = () => {
     const [name, setName] = useState();
     const [video, setVideo] = useState();
     
-    axios.get(profileURL)
+    fetch(profileURL)
         .then((response) => response.json())
         .then((responseJson) => {
         var ProfilePict = responseJson.items.map(obj => obj.snippet.thumbnails.medium.url);
@@ -29,7 +28,7 @@ const YouTubeContent = () => {
             return(error)
         });
 
-    axios.get(videoURL)
+    fetch(videoURL)
         .then((response) => response.json())
         .then((responseJson) => {
         var LatestVideo = responseJson.items.map(obj => obj.id.videoId);
