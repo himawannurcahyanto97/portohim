@@ -5,7 +5,7 @@ import YouTube from "react-youtube";
 import {YTContainer, YTProfile, YTName, YTPict, Visit, YTPictPart} from "./style";
 import { BsFillCaretRightFill } from "react-icons/bs";
 
-const API = process.env.REACT_APP_YT_API_KEY;
+const API = process.env.REACT_APP_API_KEY;
 const channelID = process.env.REACT_APP_YT_CHANNEL_ID;
 var profileURL = `https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=${channelID}&key=${API}`;
 var videoURL = `https://www.googleapis.com/youtube/v3/search?key=${API}&channelId=${channelID}&maxResults=1&order=date&part=snippet`;
