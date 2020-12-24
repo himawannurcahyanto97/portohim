@@ -5,10 +5,11 @@ import YouTube from "react-youtube";
 import {YTContainer, YTProfile, YTName, YTPict, Visit, YTPictPart} from "./style";
 import { BsFillCaretRightFill } from "react-icons/bs";
 
+console.log(process.env);
 const API = process.env.REACT_APP_API_KEY;
-const channelID = process.env.REACT_APP_YT_CHANNEL_ID;
-var profileURL = `https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=${channelID}&key=${API}`;
-var videoURL = `https://www.googleapis.com/youtube/v3/search?key=${API}&channelId=${channelID}&maxResults=1&order=date&part=snippet`;
+console.log(API);
+var profileURL = `https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=UCK_2UEc-JfIKDtWEy1_IK9g&key=${API}`;
+var videoURL = `https://www.googleapis.com/youtube/v3/search?key=${API}&channelId=UCK_2UEc-JfIKDtWEy1_IK9g&maxResults=1&order=date&part=snippet`;
 
 const YouTubeContent = () => {
     const [pict, setPict] = useState();
@@ -42,27 +43,20 @@ const YouTubeContent = () => {
             return(error)
         });
 
-    const YTContent = ({Pict, Name, Video}) => {
-        return(
-            <YTContainer>
-                <YTPictPart>
-                <YouTube 
-                    videoId= {Video}
-                    width="400px"  />
-                </YTPictPart>
-                <YTProfile>
-                    <YTPict src={Pict} />
-                    <YTName>{Name}</YTName>
-                    <Visit href = "https://www.youtube.com/channel/UCK_2UEc-JfIKDtWEy1_IK9g/videos">Visit YouTube Channel <BsFillCaretRightFill target="_blank"/></Visit>
-                </YTProfile>
-            </YTContainer>
-        );
-    };
     return(
         <GlobalContent>
             <TitleHomeContent>Youtube Video</TitleHomeContent>
             <YTContainer>
-                <YTContent Video = {video} Pict = {pict} Name = {name} />
+                <YTPictPart>
+                <YouTube 
+                    videoId= {video}
+                    width="400px"  />
+                </YTPictPart>
+                <YTProfile>
+                    <YTPict src={pict} />
+                    <YTName>{name}</YTName>
+                    <Visit href = "https://www.youtube.com/channel/UCK_2UEc-JfIKDtWEy1_IK9g/videos">Visit YouTube Channel <BsFillCaretRightFill target="_blank"/></Visit>
+                </YTProfile>
             </YTContainer>
         </GlobalContent>
     );
