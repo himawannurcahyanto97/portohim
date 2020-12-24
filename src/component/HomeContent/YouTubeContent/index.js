@@ -6,7 +6,8 @@ import {YTContainer, YTProfile, YTName, YTPict, Visit, YTPictPart} from "./style
 import { BsFillCaretRightFill } from "react-icons/bs";
 import axios from "axios";
 
-const API = 'AIzaSyDnbbJ7KEvlwMEgNpPoAqoqygztWJ7e2ao';
+console.log(process.env);
+const API = process.env.REACT_APP_API_KEY;
 var profileURL = `https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=UCK_2UEc-JfIKDtWEy1_IK9g&key=${API}`;
 var videoURL = `https://www.googleapis.com/youtube/v3/search?key=${API}&channelId=UCK_2UEc-JfIKDtWEy1_IK9g&maxResults=1&order=date&part=snippet`;
 
