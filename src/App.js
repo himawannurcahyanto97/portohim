@@ -1,12 +1,26 @@
-import React from 'react';
-import './App.css';
+import React, { useState } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Navbar from "./component/Navbar";
+import Home from "./pages";
+import Footer from "./component/Foot";
+import "./App.css";
+import ScrollToTop from "./component/ScrollToTop";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
-    <div className="App">
-      <h1>My React App</h1>
-      <h2>Author: Man</h2>
-    </div>
+    <Router>
+      <Navbar />
+      <ScrollToTop />
+      <Switch>
+        <Route path="/" component={Home} exact />
+      </Switch>
+      <Footer />
+    </Router>
   );
 }
 
