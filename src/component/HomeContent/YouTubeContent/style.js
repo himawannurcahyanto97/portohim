@@ -5,8 +5,10 @@ export const YTContainer = styled.div`
 `;
 
 export const YTProfile = styled.div`
-    margin: 2px 2px 2px 24px;
+    margin: 2px 2px 2px 50px;
     flex-basis: 40%;
+    align-self:center;
+    text-align:center;
 `;
 
 export const YTPictPart = styled.div`
@@ -16,6 +18,7 @@ export const YTPictPart = styled.div`
 export const YTPict = styled.img`
     width: 138px;
     border-radius: 50%;
+    justify: center;
 `;
 
 export const YTName = styled.p`

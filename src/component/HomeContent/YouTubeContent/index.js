@@ -44,18 +44,18 @@ const YouTubeContent = () => {
 
     const YTContent = ({Pict, Name, Video}) => {
         return(
-            <div>
+            <YTContainer>
                 <YTPictPart>
                 <YouTube 
                     videoId= {Video}
-                    width="411" 
-                    height="231" />
+                    width="400px"  />
                 </YTPictPart>
                 <YTProfile>
                     <YTPict src={Pict} />
                     <YTName>{Name}</YTName>
+                    <Visit href = "https://www.youtube.com/channel/UCK_2UEc-JfIKDtWEy1_IK9g/videos">Visit YouTube Channel <BsFillCaretRightFill target="_blank"/></Visit>
                 </YTProfile>
-            </div>
+            </YTContainer>
         );
     };
     return(
@@ -63,9 +63,6 @@ const YouTubeContent = () => {
             <TitleHomeContent>Youtube Video</TitleHomeContent>
             <YTContainer>
                 <YTContent Video = {video} Pict = {pict} Name = {name} />
-                <YTContainer>
-                <Visit href = "https://www.youtube.com/channel/UCK_2UEc-JfIKDtWEy1_IK9g/videos">Visit YouTube Channel <BsFillCaretRightFill target="_blank"/></Visit>
-                </YTContainer>
             </YTContainer>
         </GlobalContent>
     );
