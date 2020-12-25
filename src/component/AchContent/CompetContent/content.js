@@ -3,7 +3,7 @@ import kics1 from "../../../images/kics1.png";
 import kics2 from "../../../images/kics2.png";
 import iceei from "../../../images/iceei.png";
 import iceei1 from "../../../images/iceei1.png";
-import iceei2 from "../../../images/ezex2.png";
+import iceei2 from "../../../images/iceei2.png";
 import compfest from "../../../images/compfest.png";
 import compfest1 from "../../../images/compfest1.png";
 import jasaraharja from "../../../images/jasaraharja.png";
