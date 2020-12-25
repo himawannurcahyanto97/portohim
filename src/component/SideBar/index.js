@@ -30,7 +30,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLink to="/blog" onClick={toggle}>
             Blog
           </SidebarLink>
-          <SidebarLink to="/gallery" onClick={toggle}>
+          <SidebarLink to="/galleries" onClick={toggle}>
             Gallery
           </SidebarLink>
         </SidebarMenu>
