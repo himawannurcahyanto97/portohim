@@ -1,29 +1,31 @@
 import React from "react";
 import {EduData} from "./content";
 import { GlobalContent } from "../../GlobalContent";
-import {TitleExpContent} from "../style";
+import { 
+    TitleExpContent, 
+    WrapperContentExp,
+    BoxExpContain,
+    ExpTitle,
+    ExpWrite
+} from "../style";
 import {
-    StudContain,
-    BoxStudContain,
-    EduPart,
-    EduTitle,
-    EduWrite
+    EduPart
 } from "./style";
 
 const ManageEduData = ({ imgl,edu, major,year,desc,imgr }) => {
     return(
-        <StudContain>
-            <BoxStudContain>
+        <WrapperContentExp>
+            <BoxExpContain>
                 <EduPart><img src = {imgl} /></EduPart>
                 <EduPart contain >
-                    <EduTitle>{edu}</EduTitle>
-                    <EduWrite>{major}</EduWrite>
-                    <EduWrite year>{year}</EduWrite>
-                    <EduWrite desc>{desc}</EduWrite>
+                    <ExpTitle>{edu}</ExpTitle>
+                    <ExpWrite>{major}</ExpWrite>
+                    <ExpWrite year>{year}</ExpWrite>
+                    <ExpWrite desc>{desc}</ExpWrite>
                 </EduPart>
                 <EduPart><img src = {imgr} /></EduPart>
-            </BoxStudContain>
-        </StudContain>
+            </BoxExpContain>
+        </WrapperContentExp>
     );
 };
 

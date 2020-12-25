@@ -1,4 +1,5 @@
 import React from "react";
+import { FaBars } from "react-icons/fa";
 import { 
     Nav, 
     NavLogo, 
@@ -7,17 +8,21 @@ import {
     NavButtonPart, 
     Navbtn, 
     NavLogoPart, 
-    NavBarContainer 
+    NavBarContainer,
+    MobileIcon 
 } from "./NavStyle";
 import HNLogo from "../../images/HNLogo.png"
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
     return (
         <Nav>
             <NavBarContainer>
                 <NavLogoPart to = "/">
                     <NavLogo src = {HNLogo} />
                 </NavLogoPart>
+                <MobileIcon onClick={toggle}>
+                    <FaBars />
+                </MobileIcon>
                 <NavListPart>
                     <NavList to = "/">Home</NavList>
                     <NavList to = "/experience" >Experience</NavList>

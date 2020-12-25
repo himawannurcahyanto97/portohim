@@ -2,6 +2,11 @@ import styled from "styled-components";
 
 export const YTContainer = styled.div`
     display: flex;
+    margin: 0 50px;
+    @media screen and (max-width: 1015px) {
+        display: block;
+        margin: 0 auto;
+    }
 `;
 
 export const YTProfile = styled.div`
@@ -9,6 +14,17 @@ export const YTProfile = styled.div`
     flex-basis: 40%;
     align-self:center;
     text-align:center;
+    @media screen and (max-width: 1015px) {
+        margin: 0 auto;
+    }
+`;
+export const YouTube = styled.iframe`
+    width: 400px;
+    height: 231px;
+    @media screen and (max-width: 1015px) {
+        width: 100%;
+        height: 200px;
+        margin: 0 auto;
 `;
 
 export const YTPictPart = styled.div`
@@ -19,6 +35,9 @@ export const YTPict = styled.img`
     width: 117px;
     border-radius: 50%;
     justify: center;
+    @media screen and (max-width: 1015px) {
+        width:70px;
+    }
 `;
 
 export const YTName = styled.p`

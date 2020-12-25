@@ -5,6 +5,7 @@ import Navbar from "./component/Navbar";
 import Home from "./pages";
 import ExpPage from "./pages/ExpPage"
 import Footer from "./component/Foot";
+import Sidebar from "./component/SideBar";
 import "./App.css";
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
   };
   return (
     <Router>
-      <Navbar />
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Navbar toggle={toggle} />
       <ScrollToTop />
       <Switch>
         <Route path="/" component={Home} exact />

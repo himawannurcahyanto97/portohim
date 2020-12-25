@@ -9,6 +9,13 @@ export const BlogBox = styled.div`
         transition: 0.2s ease-in-out;
         transform: scale(1.05);
         }
+    @media screen and (max-width: 1015px) {
+        margin: 0 auto;
+    }
+    @media screen and (max-width: 610px) {
+        width: 200px;
+        height: 400px;
+    }
 `;
 
 export const BlogContainer = styled.div`
@@ -21,28 +28,46 @@ export const BlogContainer = styled.div`
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
       }
+    @media screen and (max-width: 610px) {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        padding: 0;
+        grid-gap: 20px;
+    }
+`;
+
+export const BoxWrapper = styled.div`
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    height: 100%;
+    margin: 15px
 `;
 
 export const BoxContainer = styled.p`
     font-weight: ${(props) => (props.titlee ? "bold" : "normal") };
     font-size: ${(props) => (props.titlee ? "14px" : "12px") };
     line-height: ${(props) => (props.titlee ? "28px" : "20px") };
-    margin: 2px 11px 0 16px;
-    overflow: hidden;
 `;
 
 export const BlogImage = styled.img`
     z-index: 3;
     width: 214px;
-    margin: 15px 15px 0 18px;
-    align-item:center;
+    @media screen and (max-width: 610px) {
+        width: 95%;
+    }
+`;
+
+export const BlogContainerPart = styled.div`
+    flex-basis: ${(props) => (props.btn ? "15%" : "40%")};
+    overflow: ${(props) => (props.wrt ? "auto" : "none")};
+    text-align: ${(props) => (props.wrt ? "none" : "center")};
 `;
 
 export const Blogbtn = styled.button`
-    position:inherit;
-    top: 85%;
     z-index: 20;
-    margin: 2px 15px 0 18px;
+    position: inherit;
+    margin-bottom: 10px 0;
     border-radius: 5px;
     background: #1054D9;
     padding: 8px 32px;
@@ -55,5 +80,9 @@ export const Blogbtn = styled.button`
     &:hover {
         transition: all 0.2s ease-in-out;
         opacity: 50%;
+    }
+    @media screen and (max-width: 610px) {
+        font-size: 12px;
+        margin: 30px 0;
     }
 `;

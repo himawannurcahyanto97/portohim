@@ -2,18 +2,23 @@ import styled from "styled-components";
 
 export const Banner = styled.div`
     display: flex;
+    @media screen and (max-width: 1015px) {
+        display:block
+    }
 `;
 
 export const ImgPart = styled.div`
     flex-basis: 40%;
     padding: 5px;
     margin: 0 auto;
-    align-items: center;
+    text-align: center
 `;
 
 export const Img = styled.img`
-    max-width: 414px;
     margin-top: 40px;
+    @media screen and (max-width: 1015px) {
+        width: 85%;
+    }
 `;
 export const IntroPart = styled.div`
     flex-basis: 60%;
@@ -21,6 +26,9 @@ export const IntroPart = styled.div`
     padding: 5px;
     align-self:center;
     margin-top: 50px;
+    @media screen and (max-width: 1015px) {
+        text-align:center;
+    }
 `;
 
 export const Intro = styled.p`

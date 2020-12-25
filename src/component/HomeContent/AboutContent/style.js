@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const AboutWrapper = styled.div`
     display: grid;
     grid-gap: 50px;
+    @media screen and (max-width: 785px) {
+        display: block;
+        margin: 0 auto;
+    }
 `;
 
 export const AboutWriteContent = styled.p`
@@ -20,6 +24,14 @@ export const HimaAbout = styled.div`
         transition: all 0.2s ease-in-out;
         transform:scale(1.05);
         }
+    @media screen and (max-width: 785px) {
+        margin: 10px auto;
+        width: 80%
+    }
+`;
+
+export const HimaAboutImg = styled.img`
+    width: 100%;
 `;
 
 export const GridAbout = styled.div`

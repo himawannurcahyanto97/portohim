@@ -1,8 +1,8 @@
 import React from "react";
-import ManageBlogData from "../HomeContent/BlogContent";
 import EducationContent from "./EducationContent";
+import WorkExp from "./WorkExperience";
 import SkillsContent from "./SkillsContent";
-import WorkExp from "./WorkingExperience";
+import ExpBlog from "./ExpBlog"
 
 const ExpContent = () => {
     return(
@@ -10,6 +10,7 @@ const ExpContent = () => {
             <EducationContent />
             <WorkExp />
             <SkillsContent />
+            <ExpBlog />
         </>
     );
 };

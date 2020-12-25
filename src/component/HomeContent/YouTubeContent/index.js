@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { GlobalContent } from "../../GlobalContent";
 import { TitleHomeContent } from "../style";
-import YouTube from "react-youtube";
-import {YTContainer, YTProfile, YTName, YTPict, Visit, YTPictPart} from "./style";
+import {YTContainer, YTProfile, YTName, YTPict, Visit, YTPictPart, YouTube} from "./style";
 import { BsFillCaretRightFill } from "react-icons/bs";
 import HimaYT from "../../../images/HimaYT.png"
 
@@ -13,8 +12,10 @@ const YouTubeContent = () => {
             <YTContainer>
                 <YTPictPart>
                 <YouTube 
-                    videoId= "73GT1a6WzTE"
-                    width="400px"  />
+                    src="https://www.youtube.com/embed/4tB945cWbyo"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen  />
                 </YTPictPart>
                 <YTProfile>
                     <YTPict src= {HimaYT} />

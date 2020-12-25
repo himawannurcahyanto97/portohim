@@ -8,7 +8,8 @@ import {
     SocialIconLink,
     SocialIcons,
     GridAbout,
-    ContactIcon
+    ContactIcon,
+    HimaAboutImg
 } from "./style";
 import {
     FaFacebookSquare,
@@ -35,7 +36,7 @@ const AboutContent = () => {
                 <AboutWriteContent about > {abt} </AboutWriteContent>
             </GridAbout>
             <HimaAbout>
-                <img src = {AboutHima} alt="Hima" />
+                <HimaAboutImg src = {AboutHima} alt="Hima" />
             </HimaAbout>
             <GridAbout>
             <TitleHomeContent>Reach Me</TitleHomeContent>
