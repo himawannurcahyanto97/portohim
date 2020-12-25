@@ -8,7 +8,7 @@ import {
     BoxContainer,
     BlogImage,
     BoxWrapper,
-    BlogContainerPart
+    BlogContainerPart,
 } from "../../HomeContent/BlogContent/style"
 
 const ManageExpBlogData = ({ image, title, description }) => {
@@ -16,7 +16,7 @@ const ManageExpBlogData = ({ image, title, description }) => {
       <BlogBox>
         <BoxWrapper>
           <BlogContainerPart><BlogImage src = {image} /></BlogContainerPart>
-          <BlogContainerPart>
+          <BlogContainerPart wrt>
           <BoxContainer titlee >{title}</BoxContainer>
           <BoxContainer>{description}</BoxContainer>
           </BlogContainerPart>

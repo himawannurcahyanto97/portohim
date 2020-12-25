@@ -8,12 +8,13 @@ export const BlogBox = styled.div`
     &:hover {
         transition: 0.2s ease-in-out;
         transform: scale(1.05);
+        z-index:10;
         }
     @media screen and (max-width: 1015px) {
         margin: 0 auto;
     }
     @media screen and (max-width: 610px) {
-        width: 200px;
+        width: 150px;
         height: 400px;
     }
 `;
@@ -32,7 +33,7 @@ export const BlogContainer = styled.div`
         grid-template-columns: auto auto;
         grid-template-rows: auto;
         padding: 0;
-        grid-gap: 20px;
+        grid-gap: 5px;
     }
 `;
 
@@ -48,6 +49,10 @@ export const BoxContainer = styled.p`
     font-weight: ${(props) => (props.titlee ? "bold" : "normal") };
     font-size: ${(props) => (props.titlee ? "14px" : "12px") };
     line-height: ${(props) => (props.titlee ? "28px" : "20px") };
+    @media screen and (max-width: 610px) {
+        line-height: ${(props) => (props.titlee ? "15px" : "15px") };
+        font-size: ${(props) => (props.titlee ? "12px" : "11px") };
+    }
 `;
 
 export const BlogImage = styled.img`
