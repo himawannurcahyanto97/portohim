@@ -34,7 +34,7 @@ const ManageCompetData = ({ imgMain,title, compname,date,desc,img1, img2 }) => {
 const CompetContent = () => {
     return(
         <GlobalContent>
-            <TitleContent>Working Experience</TitleContent>
+            <TitleContent>Competition</TitleContent>
             {CompetData.map((data, idx) => (
               <ManageCompetData
                 key={idx}
