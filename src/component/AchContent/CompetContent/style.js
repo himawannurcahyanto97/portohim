@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const WorkContain = styled.div`
     flex-basis: ${(props) => (props.companypict ? "25%" : "75%")};
-    align-self: center;
+    align-self: ${(props) => (props.companypict ? "none" : "center")};
     text-align: ${(props) => (props.companypict ? "center" : "left")};
-    margin-top: ${(props) => (props.companypict ? "20" : "0px")};
+    margin-top: ${(props) => (props.companypict ? "40px" : "0px")};
     padding: 5px;
     @media screen and (max-width: 642px) {
         text-align:center;

@@ -2,8 +2,8 @@ import React from "react";
 import {EduData} from "./content";
 import { GlobalContent } from "../../GlobalContent";
 import { 
-    TitleExpContent, 
-    WrapperContentExp,
+    TitleContent, 
+    WrapperContent,
     BoxExpContain,
     ExpTitle,
     ExpWrite
@@ -14,7 +14,7 @@ import {
 
 const ManageEduData = ({ imgl,edu, major,year,desc,imgr }) => {
     return(
-        <WrapperContentExp>
+        <WrapperContent>
             <BoxExpContain>
                 <EduPart><img src = {imgl} /></EduPart>
                 <EduPart contain >
@@ -25,14 +25,14 @@ const ManageEduData = ({ imgl,edu, major,year,desc,imgr }) => {
                 </EduPart>
                 <EduPart><img src = {imgr} /></EduPart>
             </BoxExpContain>
-        </WrapperContentExp>
+        </WrapperContent>
     );
 };
 
 const EducationContent = () => {
     return(
         <GlobalContent>
-            <TitleExpContent>Education</TitleExpContent>
+            <TitleContent>Education</TitleContent>
             {EduData.map((data, idx) => (
               <ManageEduData
                 key={idx}

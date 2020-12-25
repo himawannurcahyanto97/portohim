@@ -1,27 +1,26 @@
 import React from "react";
 import { GlobalContent } from "../../GlobalContent";
-import {WorksData} from "./content";
-import { 
-    TitleContent, 
+import {CompetData} from "./content"
+import {
+    TitleContent,
     WrapperContent,
     BoxExpContain,
     ExpTitle,
-    ExpWrite
-} from "../style";
+    ExpWrite} from "../../ExpContent/style";
 import {
     WorkContain,
     CompPict,
     AddedPictWork
 } from "./style"
 
-const ManageWorkData = ({ imgMain,compname, major,date,desc,img1, img2 }) => {
+const ManageCompetData = ({ imgMain,title, compname,date,desc,img1, img2 }) => {
     return(
         <WrapperContent>
             <BoxExpContain>
                 <WorkContain companypict><CompPict src = {imgMain} /></WorkContain>
                 <WorkContain>
-                <ExpTitle>{compname}</ExpTitle>
-                    <ExpWrite>{major}</ExpWrite>
+                <ExpTitle>{title}</ExpTitle>
+                    <ExpWrite>{compname}</ExpWrite>
                     <ExpWrite year>{date}</ExpWrite>
                     <ExpWrite desc>{desc}</ExpWrite>
                     <AddedPictWork src = {img1} />
@@ -32,16 +31,16 @@ const ManageWorkData = ({ imgMain,compname, major,date,desc,img1, img2 }) => {
     );
 };
 
-const WorkExp = () => {
+const CompetContent = () => {
     return(
         <GlobalContent>
             <TitleContent>Working Experience</TitleContent>
-            {WorksData.map((data, idx) => (
-              <ManageWorkData
+            {CompetData.map((data, idx) => (
+              <ManageCompetData
                 key={idx}
                 imgMain={data.imgMain}
+                title={data.title}
                 compname={data.compname}
-                major={data.major}
                 date={data.date}
                 desc={data.desc}
                 img1={data.img1}
@@ -51,5 +50,4 @@ const WorkExp = () => {
         </GlobalContent>
     );
 };
-
-export default WorkExp;
+export default CompetContent;

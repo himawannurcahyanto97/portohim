@@ -8,16 +8,13 @@ export const CertifContainer = styled.div`
     margin-bottom: 8px;
     width: 100%;
     @media screen and (max-width: 811px) {
-        grid-gap: 10px;
+        display: block;
     }
 `;
 
 export const CertifBox = styled.div`
     display: flex;
     flex-direction: row;
-    @media screen and (max-width: 811px) {
-        flex-direction: column;
-    }
 `;
 
 export const CertifBoxContain = styled.div`
@@ -27,9 +24,7 @@ export const CertifBoxContain = styled.div`
     text-align: ${(props) => (props.image)? "right" : "none"};
     padding: 10px;
     @media screen and (max-width: 811px) {
-        text-align: center;
-        box-shadow: ${(props) => (props.image)? "0px 7px 20px rgba(0, 0, 0, 0.25)" : "none"};
-        border-radius: ${(props) => (props.image)? "5px" : "none"};
+        text-align: left;
     }
 `;
 
@@ -42,4 +37,7 @@ export const DescWriteSkills = styled.p`
     font-size: 16px;
     line-height: ${(props) => (props.title) ? "30px" : "24px"};
     color: ${(props) => (props.date) ? "#5A5A5A" : "#333333"};
+    @media screen and (max-width: 811px) {
+        font-size: 13px;
+    }
 `;

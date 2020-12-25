@@ -1,6 +1,6 @@
 import React from "react";
 import { GlobalContent } from "../../GlobalContent";
-import { TitleExpContent } from "../style";
+import { TitleContent } from "../style";
 import {CertifData,SkillData} from "./content";
 import {
     CertifContainer,
@@ -28,7 +28,7 @@ const ManageSkillsData = ({img,title,institution,date}) => {
 const SkillsContent = () => {
     return(
         <GlobalContent>
-            <TitleExpContent>Certification and Skill</TitleExpContent>
+            <TitleContent>Certification and Skill</TitleContent>
             <CertifContainer>
             {CertifData.map((data, idx) => (
               <ManageSkillsData

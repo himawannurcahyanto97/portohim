@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const TitleExpContent = styled.div`
+export const TitleContent = styled.div`
     font-family: Poppins;
     font-style: normal;
     font-weight: 900;
@@ -14,7 +14,7 @@ export const TitleExpContent = styled.div`
     }
 `;
 
-export const WrapperContentExp = styled.div`
+export const WrapperContent = styled.div`
     display: grid;
     grid-auto-columns: 100%;
     margin-bottom: 32px;

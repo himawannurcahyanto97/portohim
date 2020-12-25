@@ -1,6 +1,6 @@
 import React from "react";
 import { GlobalContent } from "../../GlobalContent";
-import { TitleExpContent } from "../style";
+import { TitleContent } from "../style";
 import {BlogData} from "../../HomeContent/BlogContent/content";
 import {
     BlogBox,
@@ -28,7 +28,7 @@ const ManageExpBlogData = ({ image, title, description }) => {
 const ExpBlog = () => {
     return(
         <GlobalContent>
-            <TitleExpContent>Experience Blog</TitleExpContent>
+            <TitleContent>Experience Blog</TitleContent>
             <BlogContainer>
             {BlogData.map((data, idx) => (
               <ManageExpBlogData
