@@ -28,7 +28,7 @@ const Navbar = ({toggle}) => {
                     <NavList to = "/experience" >Experience</NavList>
                     <NavList to = "/achievement" >Achievement</NavList>
                     <NavList to = "/blog" >Blog</NavList>
-                    <NavList to = "/gallery ">Gallery</NavList>
+                    <NavList to = "/galleries">Gallery</NavList>
                 </NavListPart>
                 <NavButtonPart>
                     <Navbtn>Contact</Navbtn>

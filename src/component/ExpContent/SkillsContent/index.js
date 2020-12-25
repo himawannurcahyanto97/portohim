@@ -13,7 +13,7 @@ import {
 const ManageSkillsData = ({img,title,institution,date}) => {
     return (
         <CertifBox>
-            <CertifBoxContain>
+            <CertifBoxContain image>
                 <InstImage src= {img} />
             </CertifBoxContain>
             <CertifBoxContain>
@@ -33,7 +33,7 @@ const SkillsContent = () => {
             {CertifData.map((data, idx) => (
               <ManageSkillsData
                 key={idx}
-                imag={data.img}
+                img={data.imge}
                 title={data.title}
                 institution={data.institution}
                 date={data.date}

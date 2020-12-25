@@ -1,7 +1,6 @@
 import React from "react";
-import { GlobalContent } from "../../GlobalContent";
-import { TitleExpContent } from "../style";
-import {BlogData} from "../../HomeContent/BlogContent/content";
+import { GlobalContent } from "../GlobalContent";
+import {BlogDataValue} from "./content";
 import {
     BlogBox,
     BlogContainer,
@@ -9,9 +8,10 @@ import {
     BlogImage,
     BoxWrapper,
     BlogContainerPart,
-} from "../../HomeContent/BlogContent/style";
+    Blogbtn
+} from "../HomeContent/BlogContent/style";
 
-const ManageExpBlogData = ({ image, title, description }) => {
+const ManageBlogValueData = ({ image, title, description }) => {
     return (
       <BlogBox>
         <BoxWrapper>
@@ -20,18 +20,18 @@ const ManageExpBlogData = ({ image, title, description }) => {
           <BoxContainer titlee >{title}</BoxContainer>
           <BoxContainer>{description}</BoxContainer>
           </BlogContainerPart>
+          <BlogContainerPart btn><Blogbtn>Continue Reading</Blogbtn></BlogContainerPart>
         </BoxWrapper>
       </BlogBox>
     );
 };
 
-const ExpBlog = () => {
+const BlogValue = () => {
     return(
         <GlobalContent>
-            <TitleExpContent>Experience Blog</TitleExpContent>
             <BlogContainer>
-            {BlogData.map((data, idx) => (
-              <ManageExpBlogData
+            {BlogDataValue.map((data, idx) => (
+              <ManageBlogValueData
                 key={idx}
                 image={data.img}
                 title={data.title}
@@ -43,4 +43,4 @@ const ExpBlog = () => {
     );
 };
 
-export default ExpBlog;
+export default BlogValue;

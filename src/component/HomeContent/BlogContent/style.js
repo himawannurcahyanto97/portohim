@@ -30,10 +30,10 @@ export const BlogContainer = styled.div`
         grid-template-rows: auto auto;
       }
     @media screen and (max-width: 610px) {
-        grid-template-columns: auto auto;
+        grid-template-columns: 50% 50%;
         grid-template-rows: auto;
         padding: 0;
-        grid-gap: 5px;
+        grid-gap: 10px;
     }
 `;
 

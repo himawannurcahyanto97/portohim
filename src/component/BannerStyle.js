@@ -17,7 +17,7 @@ export const ImgPart = styled.div`
 export const Img = styled.img`
     margin-top: 40px;
     @media screen and (max-width: 1015px) {
-        width: 85%;
+        width: 75%;
     }
 `;
 export const IntroPart = styled.div`

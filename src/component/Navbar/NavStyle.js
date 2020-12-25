@@ -13,6 +13,7 @@ export const Nav = styled.nav`
     z-index: 500;
     @media screen and (max-width: 1015px) {
         width: 100%;
+        top:-1px;
     }
 `;
 

@@ -13,7 +13,7 @@ export const GalleryContainer = styled.div`
         margin: auto;
       }
     @media screen and (max-width: 676px) {
-        grid-template-columns: auto auto;
+        grid-template-columns: 50% 50%;
         grid-template-rows: auto;
         grid-gap: 5px;
         padding: 0px;
@@ -22,9 +22,7 @@ export const GalleryContainer = styled.div`
 `;
 
 export const GalleryImage = styled.img`
-    z-index: 3;
-    width: 182px;
-    align-item:center;
+    width: 187px;
     position: inherit;
     &:hover {
         transition: all 0.2s ease-in-out;
