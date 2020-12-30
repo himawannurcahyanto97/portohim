@@ -13,7 +13,7 @@ const PublicationContent = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        axios.get(process.env.REACT_APP_BASE_URL).then (res => {
+        axios.get(`https://spreadsheets.google.com/feeds/cells/1X_U81VdWD23p5lNXMbDSUOBK4Ec7qWIkyNAQvQiO6iI/1/public/full?alt=json`).then (res => {
             const respon = res.data
             const getData =  respon.feed.entry.map(obj => obj.gs$cell);
             setData(getData);
