@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const PubTable = styled.div`
   width: 100%;
   overflow:auto;
-  height: 200px;
   align-self:center;
   text-align:center;
 `;
