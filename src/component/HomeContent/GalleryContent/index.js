@@ -20,7 +20,7 @@ const GalleryContent = () => {
         <GlobalContent>
             <TitleHomeContent recent>Recent Gallery</TitleHomeContent>
             <TitleHomeContent view recent>
-                <Viewedin to="/gallery">View All <BsFillCaretRightFill target="_blank"/></Viewedin>
+                <Viewedin to="/galleries">View All <BsFillCaretRightFill target="_blank"/></Viewedin>
             </TitleHomeContent>
             <GalleryContainer>
                 {GalleryData.map((data, idx) => (
