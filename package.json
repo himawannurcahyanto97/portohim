@@ -13,7 +13,6 @@
     "react-icons": "^4.1.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.1",
-    "react-scroll": "^1.8.1",
     "react-table": "^7.6.2",
     "styled-components": "^5.2.1"
   },
@@ -40,6 +39,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {}
+  }
 }

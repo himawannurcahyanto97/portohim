@@ -30,10 +30,10 @@ const mail = AboutData.mail;
 const AboutContent = () => {
     return(
         <GlobalContent>
-            <TitleHomeContent about >About Me</TitleHomeContent>
+            <TitleHomeContent abt >About Me</TitleHomeContent>
             <AboutWrapper>
-            <GridAbout gridAbout >
-                <AboutWriteContent about > {abt} </AboutWriteContent>
+            <GridAbout gridAbt >
+                <AboutWriteContent abt > {abt} </AboutWriteContent>
             </GridAbout>
             <HimaAbout>
                 <HimaAboutImg src = {AboutHima} alt="Hima" />

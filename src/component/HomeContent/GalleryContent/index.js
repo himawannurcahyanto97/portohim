@@ -6,7 +6,6 @@ import { BsFillCaretRightFill } from "react-icons/bs";
 import {
     GalleryContainer,
     GalleryImage,
-    GalleryImagePart
 } from "./style";
 
 const ManageGalleryData = ({images}) => {

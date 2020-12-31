@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
 export const PubTable = styled.div`
-  width: 100%;
-  overflow:auto;
-  align-self:center;
+  overflow: auto;
+  height: 250px;
   text-align:center;
 `;
 
@@ -13,7 +12,9 @@ export const TableGrid = styled.div`
 `;
 
 export const TabledContent = styled.div`
-  flex-basis: ${(props) => (props.flexed)};
-  border: 1px solid #BDBDBD;
-  padding:6px;
+  border: 0.5px solid #BDBDBD;
+  padding: 5px;
+  @media screen and (max-width: 1140px) {
+    box-sizing: border-box;
+  }
 `;
