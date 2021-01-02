@@ -1,6 +1,6 @@
 import React from "react";
 import { GlobalContent } from "../../GlobalContent";
-import {CompetData} from "./content"
+import {CompetData} from "../../../alldata/CompetitionContent"
 import {
     TitleContent,
     WrapperContent,

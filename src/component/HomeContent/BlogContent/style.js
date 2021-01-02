@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import {Link} from "react-router-dom";
 
 export const BlogBox = styled.div`
     width: 250px;
     height: 464px;
-    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     &:hover {
         transition: 0.2s ease-in-out;
@@ -16,6 +17,7 @@ export const BlogBox = styled.div`
     @media screen and (max-width: 610px) {
         width: 150px;
         height: 400px;
+        box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
     }
 `;
 
@@ -25,15 +27,21 @@ export const BlogContainer = styled.div`
     grid-template-rows: auto auto;
     grid-gap: 40px;
     padding: 10px;
+    height: 1000px;
+    overflow-y: hidden;
+    margin-left: 10px;
     @media screen and (max-width: 1015px) {
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
+        height: 1500px;
       }
     @media screen and (max-width: 610px) {
         grid-template-columns: 50% 50%;
         grid-template-rows: auto;
         padding: 0;
-        grid-gap: 10px;
+        grid-gap: 5px;
+        height:1220px;
+        margin-left:0;
     }
 `;
 
@@ -60,19 +68,23 @@ export const BlogImage = styled.img`
     width: 214px;
     @media screen and (max-width: 610px) {
         width: 95%;
+        min-height: 150px
     }
 `;
 
 export const BlogContainerPart = styled.div`
-    flex-basis: ${(props) => (props.btn ? "15%" : "40%")};
+    flex-basis: ${(props) => (props.btn ? "10%" : "38%")};
     overflow: ${(props) => (props.wrt ? "auto" : "none")};
     text-align: ${(props) => (props.wrt ? "none" : "center")};
+    padding-top: ${(props) => (props.wrt ? "10px" : "0")};
+    margin-bottom: ${(props) => (props.wrt ? "10px" : "0")};
+    @media screen and (max-width: 610px) {
+        margin-top: ${(props) => (props.wrt ? "0" : "6px")};
+    }
 `;
 
-export const Blogbtn = styled.button`
-    z-index: 20;
-    position: inherit;
-    margin-bottom: 10px 0;
+export const Blogbtn = styled(Link)`
+    margin: 10px 0;
     border-radius: 5px;
     background: #1054D9;
     padding: 8px 32px;
@@ -89,5 +101,6 @@ export const Blogbtn = styled.button`
     @media screen and (max-width: 610px) {
         font-size: 12px;
         margin: 30px 0;
+        padding: 5px;
     }
 `;

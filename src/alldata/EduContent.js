@@ -1,9 +1,9 @@
-import Kookmin from "../../../images/image16.png";
-import Ui from "../../../images/Makara_UI1.png";
-import Smabo from "../../../images/image17.png";
-import Kookmin2 from "../../../images/KOOKMIN2.png";
-import Ui2 from "../../../images/2 22.png";
-import Smabo2 from "../../../images/SMA1.png";
+import Kookmin from "../images/image16.png";
+import Ui from "../images/Makara_UI1.png";
+import Smabo from "../images/image17.png";
+import Kookmin2 from "../images/KOOKMIN2.png";
+import Ui2 from "../images/2 22.png";
+import Smabo2 from "../images/SMA1.png";
 
 export const EduData = [
     {

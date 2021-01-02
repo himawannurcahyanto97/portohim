@@ -19,7 +19,7 @@ const Footer = () => {
                     <FooterLogo src={HNFooterLogo} />
                 </FooterLogoPart>
                 <WebsiteRightsPart>
-                    <WebsiteRights>©2020 Himawan All rights reserved.</WebsiteRights>
+                    <WebsiteRights>©2021 Himawan All rights reserved.</WebsiteRights>
                 </WebsiteRightsPart>
             </FootContainer>
         </Foot>

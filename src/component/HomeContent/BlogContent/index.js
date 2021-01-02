@@ -1,8 +1,8 @@
 import React from "react";
 import {GlobalContent} from "../../GlobalContent";
-import {BlogData} from "./content";
 import { TitleHomeContent, Viewedin} from "../style";
 import { BsFillCaretRightFill } from "react-icons/bs";
+import {BlogData} from "../../../alldata/BlogContent";
 import {
     BlogBox,
     BlogContainer,
@@ -13,16 +13,16 @@ import {
     BlogContainerPart
 } from "./style"
 
-export const ManageBlogData = ({ image, title, description }) => {
+export const ManageBlogData = ({ medias, title, description, id }) => {
     return (
       <BlogBox>
         <BoxWrapper>
-          <BlogContainerPart><BlogImage src = {image} /></BlogContainerPart>
+        <BlogContainerPart><BlogImage src={medias} /></BlogContainerPart>
           <BlogContainerPart wrt>
           <BoxContainer titlee >{title}</BoxContainer>
           <BoxContainer>{description}</BoxContainer>
           </BlogContainerPart>
-          <BlogContainerPart btn><Blogbtn>Continue Reading</Blogbtn></BlogContainerPart>
+          <BlogContainerPart btn><Blogbtn to = {`/blogscontainer/${id}`}>Continue Reading</Blogbtn></BlogContainerPart>
         </BoxWrapper>
       </BlogBox>
     );
@@ -36,12 +36,13 @@ const BlogContent = () => {
               <Viewedin to="/blog">View All <BsFillCaretRightFill target="_blank"/></Viewedin>
             </TitleHomeContent>
             <BlogContainer>
-            {BlogData.map((data, idx) => (
+            {BlogData.map((data,idx) => (
               <ManageBlogData
                 key={idx}
-                image={data.img}
+                medias={data.imagee}
                 title={data.title}
                 description={data.description}
+                id={data.id}
               />
             ))}
             </BlogContainer>

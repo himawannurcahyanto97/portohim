@@ -1,4 +1,4 @@
-import Paper from "../../../images/SmartFactoryBasedonIoTPlatform-pages-1_page-0001 1.png"
+import Paper from "../images/SmartFactoryBasedonIoTPlatform-pages-1_page-0001 1.png"
 
 export const PaperData = [
     {

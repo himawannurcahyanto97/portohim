@@ -1,20 +1,20 @@
-import Ens from "../../../images/Ens.png";
-import Ens1 from "../../../images/ens1.png";
-import Ens2 from "../../../images/ens2.png";
-import Ezex from "../../../images/Ezex.png";
-import Ezex1 from "../../../images/ezex1.png";
-import Ezex2 from "../../../images/ezex2.png";
-import bukaka from "../../../images/bukaka.png";
-import bukaka1 from "../../../images/bukaka1.png";
-import bukaka2 from "../../../images/bukaka2.png";
-import pjb from "../../../images/PJB.png";
-import pjb1 from "../../../images/pjb1.png";
-import pjb2 from "../../../images/pjb2.png";
-import pln from "../../../images/PLN.png";
-import pln1 from "../../../images/pln1.png";
-import pln2 from "../../../images/pln2.png";
-import quipper from "../../../images/Quipper.png";
-import rb from "../../../images/RB.png";
+import Ens from "../images/Ens.png";
+import Ens1 from "../images/ens1.png";
+import Ens2 from "../images/ens2.png";
+import Ezex from "../images/Ezex.png";
+import Ezex1 from "../images/ezex1.png";
+import Ezex2 from "../images/ezex2.png";
+import bukaka from "../images/bukaka.png";
+import bukaka1 from "../images/bukaka1.png";
+import bukaka2 from "../images/bukaka2.png";
+import pjb from "../images/PJB.png";
+import pjb1 from "../images/pjb1.png";
+import pjb2 from "../images/pjb2.png";
+import pln from "../images/PLN.png";
+import pln1 from "../images/pln1.png";
+import pln2 from "../images/pln2.png";
+import quipper from "../images/Quipper.png";
+import rb from "../images/RB.png";
 
 export const WorksData = [
     {

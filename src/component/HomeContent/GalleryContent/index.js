@@ -1,7 +1,7 @@
 import React from "react";
 import {GlobalContent} from "../../GlobalContent";
 import { TitleHomeContent, Viewedin} from "../style";
-import {GalleryData} from "./content";
+import {GalleryValueData} from "../../../alldata/GalleryContent";
 import { BsFillCaretRightFill } from "react-icons/bs";
 import {
     GalleryContainer,
@@ -22,11 +22,11 @@ const GalleryContent = () => {
                 <Viewedin to="/galleries">View All <BsFillCaretRightFill target="_blank"/></Viewedin>
             </TitleHomeContent>
             <GalleryContainer>
-                {GalleryData.map((data, idx) => (
+                {GalleryValueData.map((data, idx) => (
                 <ManageGalleryData
                     key={idx}
-                    images={data.img}
-                    alt={data.img}
+                    images={data.images}
+                    alt={data.images}
                 />
                 ))}
             </GalleryContainer>

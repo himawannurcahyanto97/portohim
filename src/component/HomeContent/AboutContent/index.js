@@ -20,7 +20,7 @@ import {
     FaPhone,
     FaEnvelope
 } from "react-icons/fa";
-import { AboutData } from "./content";
+import { AboutData } from "../../../alldata/AboutContent";
 import AboutHima from "../../../images/AboutHima.png";
 
 const abt = AboutData.abt;

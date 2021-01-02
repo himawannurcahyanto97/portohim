@@ -2,7 +2,7 @@ import React from "react";
 import achhima from "../../images/achhima.png";
 import { GlobalContent } from "../GlobalContent";
 import {Banner, IntroPart, Intro, Img, ImgPart} from "../BannerStyle";
-import {AchBanData} from "./content";
+import {AchBanData} from "../../alldata/AchievContent";
 import {
     ItemBoxGrid,
     ItemBoxAch,

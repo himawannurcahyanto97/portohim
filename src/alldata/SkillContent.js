@@ -1,7 +1,7 @@
-import coursera from "../../../images/coursera.png";
-import Ielts from "../../../images/ielts.png";
-import Niomic from "../../../images/niomic.png";
-import Esdm from "../../../images/esdm.png";
+import coursera from "../images/coursera.png";
+import Ielts from "../images/ielts.png";
+import Niomic from "../images/niomic.png";
+import Esdm from "../images/esdm.png";
 
 export const CertifData = [
     {

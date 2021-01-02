@@ -1,64 +1,51 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React from "react";
 import {TitleContent} from "../../ExpContent/style";
 import { GlobalContent } from "../../GlobalContent";
-import axios from "axios";
+import { PubliData } from "../../../alldata/PublicationContent";
 import {
     PubTable,
-    TableGrid,
-    TabledContent,
-} from "./style"
+    TableStyle
+} from "./style";
 
-const ManagePubliTableData = ({data1,data2,data3,data4,data5}) => {
+const ManagePubliTableData = ({data1,data2,data3,data4}) => {   
     return(
-        <TableGrid>
-            <TabledContent>{data1}</TabledContent>
-            <TabledContent>{data2}</TabledContent>
-            <TabledContent>{data3}</TabledContent>
-            <TabledContent>{data4}</TabledContent>
-            <TabledContent>{data5}</TabledContent>
-        </TableGrid>
+        <tr>
+            <td>{data1}</td>
+            <td>{data2}</td>
+            <td>{data3}</td>
+            <td>{data4}</td>
+        </tr>
     )
 };
 
 const PublicationContent = () => {
-    const [data, setData] = useState([]);
-
-    const loadData = useCallback(() => {
-        const url = "https://spreadsheets.google.com/feeds/cells/1X_U81VdWD23p5lNXMbDSUOBK4Ec7qWIkyNAQvQiO6iI/1/public/full?alt=json";
-        axios.get(`${url}`)
-            .then (res => {
-            const getData =  res.data.feed.entry.map(obj => obj.gs$cell);
-            setData(getData);
-            })
-            .catch(error => {
-            console.error(error);
-            })
-    }, []);
-
-    useEffect(() => {
-        loadData();
-    }, [])
-    
-    const colmn1 = data.filter(x => (x['col'] == 1)).map(obj=>obj.inputValue);
-    const colmn2 = data.filter(x => (x['col'] == 2)).map(obj=>obj.inputValue);
-    const colmn3 = data.filter(x => (x['col'] == 3)).map(obj=>obj.inputValue);
-    const colmn4 = data.filter(x => (x['col'] == 4)).map(obj=>obj.inputValue);
-    const colmn5 = data.filter(x => (x['col'] == 5)).map(obj=>obj.inputValue);
-    const allcolumn = [colmn1,colmn2,colmn3,colmn4,colmn5];
-
     return(
         <GlobalContent>
             <TitleContent>Publication</TitleContent>
             <PubTable>
-                {allcolumn.map((data, index) => (
-                    <ManagePubliTableData
-                    key={index}
-                    data1={data[0]}
-                    data2={data[1]}
-                    data3={data[2]}
-                    data4={data[3]}
-                    data5={data[4]}
-                    />))}
+                <TableStyle>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Year</th>
+                                <th>Paper Title</th>
+                                <th>Conf. Name</th>
+                                <th>Pub. Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            { PubliData.map((data,idx) => (
+                                <ManagePubliTableData
+                                    key={idx}
+                                    data1={data.year}
+                                    data2={data.papertitle}
+                                    data3={data.confname}
+                                    data4={data.pubdate}
+                                />
+                            ))}
+                        </tbody>
+                    </table>
+                </TableStyle>
             </PubTable>
         </GlobalContent>
     );

@@ -11,7 +11,7 @@ import {
     PaperImg,
     DividerDisplay,
 } from "./style";
-import {PaperData} from "./content";
+import {PaperData} from "../../../alldata/PaperContent";
 import {Homebtn} from "../../HomeBanner/style"
 
 const ManagePaperData = ({title, tipe, text, date, author, image}) => {

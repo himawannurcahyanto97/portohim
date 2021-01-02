@@ -1,6 +1,6 @@
 import React from "react";
 import { GlobalContent } from "../../GlobalContent";
-import {WorksData} from "./content";
+import {WorksData} from "../../../alldata/WorkContent";
 import { 
     TitleContent, 
     WrapperContent,

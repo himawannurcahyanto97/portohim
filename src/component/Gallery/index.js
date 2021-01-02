@@ -1,11 +1,10 @@
 import React from "react";
 import {GlobalContent} from "../GlobalContent";
-import {GalleryValueData} from "./content";
+import {GalleryValueData} from "../../alldata/GalleryContent";
 import {
-    GalleryContainer,
     GalleryImage
 } from "../HomeContent/GalleryContent/style";
-import {GalleryTitle} from "./style";
+import {GalleryTitle, GalleryContainer} from "./style";
 
 const ManageGalleryValueData = ({images}) => {
     return(

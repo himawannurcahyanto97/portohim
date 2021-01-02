@@ -31,7 +31,7 @@ const Navbar = ({toggle}) => {
                     <NavList to = "/galleries">Gallery</NavList>
                 </NavListPart>
                 <NavButtonPart>
-                    <Navbtn>Contact</Navbtn>
+                    <a href="wa.me/821094027758?text=Hi, let’s talk Himawan!"><Navbtn>Contact</Navbtn></a>
                 </NavButtonPart>
             </NavBarContainer>
         </Nav>

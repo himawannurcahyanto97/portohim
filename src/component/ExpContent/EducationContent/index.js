@@ -1,5 +1,5 @@
 import React from "react";
-import {EduData} from "./content";
+import {EduData} from "../../../alldata/EduContent";
 import { GlobalContent } from "../../GlobalContent";
 import { 
     TitleContent, 

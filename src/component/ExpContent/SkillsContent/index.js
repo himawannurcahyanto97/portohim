@@ -1,7 +1,7 @@
 import React from "react";
 import { GlobalContent } from "../../GlobalContent";
 import { TitleContent } from "../style";
-import {CertifData,SkillData} from "./content";
+import {CertifData,SkillData} from "../../../alldata/SkillContent";
 import {
     CertifContainer,
     CertifBox,

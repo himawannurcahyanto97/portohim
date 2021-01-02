@@ -6,15 +6,21 @@ export const PubTable = styled.div`
   text-align:center;
 `;
 
-export const TableGrid = styled.div`
-  display: inline-flex;
-  flex-direction: column;
-`;
+export const TableStyle = styled.div`
+ td,  th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
 
-export const TabledContent = styled.div`
-  border: 0.5px solid #BDBDBD;
-  padding: 5px;
-  @media screen and (max-width: 1140px) {
-    box-sizing: border-box;
-  }
+ tr:nth-child(even){background-color: #f2f2f2;}
+
+ tr:hover {background-color: #ddd;}
+
+ th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: black;
+  color: white;
+}
 `;
