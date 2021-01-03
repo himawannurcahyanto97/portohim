@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export const GalleryContainer = styled.div`
     display: grid;
@@ -16,7 +17,7 @@ export const GalleryContainer = styled.div`
         margin: auto;
       }
     @media screen and (max-width: 709px) {
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 49% 49%;
         grid-template-rows: auto;
         grid-gap: 5px;
         padding: 0px;
@@ -25,9 +26,9 @@ export const GalleryContainer = styled.div`
     }
 `;
 
-export const GalleryImage = styled.img`
+export const GalleryImage = styled(LazyLoadImage)`
     width: 190px;
-    min-height: 187px; 
+    height: 187px;
     position: inherit;
     &:hover {
         transition: all 0.2s ease-in-out;

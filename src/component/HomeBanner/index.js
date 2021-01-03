@@ -2,7 +2,8 @@ import React from "react";
 import Hima from "../../images/Hima.png";
 import { GlobalContent } from "../GlobalContent";
 import { Homebtn } from "./style";
-import {Banner, IntroPart, Intro, Img, ImgPart} from "../BannerStyle"
+import {Banner, IntroPart, Intro, Img, ImgPart} from "../BannerStyle";
+import {ResumeData} from "../../alldata/HomeContent"
 
 const HomeBanner = () => {
     return(
@@ -12,7 +13,7 @@ const HomeBanner = () => {
                     <Intro>HELLO! MY NAME IS</Intro>
                     <Intro big normal >Himawan Nurcahyanto</Intro>
                     <Intro normal jobs >Artificial Intelligence <br />Engineer</Intro>
-                    <Homebtn>Download Resume</Homebtn>
+                    <a href={ResumeData.resume}><Homebtn>Download Resume</Homebtn></a>
                 </IntroPart>
                 <ImgPart>
                     <Img src={Hima} />

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export const GalleryTitle = styled.div`
     font-weight: ${(props) => (props.desc ? 500 : 900)};
@@ -27,5 +28,18 @@ export const GalleryContainer = styled.div`
         grid-gap: 5px;
         padding: 0px;
         margin: auto;
+    }
+`;
+
+export const GalleryImage = styled(LazyLoadImage)`
+    width: 190px;
+    position: inherit;
+    height: 187px;
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        transform:scale(1.02);
+    }
+    @media screen and (max-width: 520px) {
+        max-width: 90%;
     }
 `;

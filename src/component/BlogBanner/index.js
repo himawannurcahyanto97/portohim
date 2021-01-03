@@ -1,5 +1,5 @@
 import React from "react";
-import bloghima from "../../images/bloghima.png";
+import {BlogHomeContent} from "../../alldata/BlogHomeContent";
 import { GlobalContent } from "../GlobalContent";
 import {Banner, IntroPart, Intro, Img, ImgPart} from "../BannerStyle"
 
@@ -9,13 +9,10 @@ const BlogBanner = () => {
             <Banner>
                 <IntroPart>
                     <Intro big normal>My Blog</Intro>
-                    <Intro normal jobs >Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit, 
-                    dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris</Intro>
+                    <Intro normal jobs >{BlogHomeContent.desc}</Intro>
                 </IntroPart>
                 <ImgPart>
-                    <Img src={bloghima} />
+                    <Img src={BlogHomeContent.img} />
                 </ImgPart>
             </Banner>
         </GlobalContent>

@@ -3,6 +3,8 @@ import {GlobalContent} from "../../GlobalContent";
 import { TitleHomeContent, Viewedin} from "../style";
 import {GalleryValueData} from "../../../alldata/GalleryContent";
 import { BsFillCaretRightFill } from "react-icons/bs";
+import 'react-lazy-load-image-component/src/effects/blur.css';
+import HNLogo from "../../../images/HNLogo.png"
 import {
     GalleryContainer,
     GalleryImage,
@@ -10,7 +12,7 @@ import {
 
 const ManageGalleryData = ({images}) => {
     return(
-        <GalleryImage src = {images} alt= {images}/>
+        <GalleryImage src = {images} alt= {images} effect="blur" placeholderSrc={HNLogo}/>
     );
 };
 

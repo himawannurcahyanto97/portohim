@@ -1,5 +1,5 @@
 import React from "react";
-import ExpHima from "../../images/ExpHima.png";
+import {ExpHomeContent} from "../../alldata/ExperienceHomeContent";
 import { GlobalContent } from "../GlobalContent";
 import {Banner, IntroPart, Intro, Img, ImgPart} from "../BannerStyle"
 
@@ -9,13 +9,10 @@ const ExpBanner = () => {
             <Banner>
                 <IntroPart>
                     <Intro big normal>My Experience</Intro>
-                    <Intro normal jobs >Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit, 
-                    dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris</Intro>
+                    <Intro normal jobs >{ExpHomeContent.desc}</Intro>
                 </IntroPart>
                 <ImgPart>
-                    <Img src={ExpHima} />
+                    <Img src={ExpHomeContent.img} />
                 </ImgPart>
             </Banner>
         </GlobalContent>

@@ -14,7 +14,7 @@ import {
 import {PaperData} from "../../../alldata/PaperContent";
 import {Homebtn} from "../../HomeBanner/style"
 
-const ManagePaperData = ({title, tipe, text, date, author, image}) => {
+const ManagePaperData = ({title, tipe, text, date, author, image,link}) => {
     return(
         <PaperBox>
             <DisplayedPaper>
@@ -24,7 +24,7 @@ const ManagePaperData = ({title, tipe, text, date, author, image}) => {
                 <TipePaper>{text}</TipePaper>
                 <WritePaper>{date}</WritePaper>
                 <WritePaper author>{author}</WritePaper>
-                <Homebtn>Download</Homebtn>
+                <a href={link}><Homebtn>Download</Homebtn></a>
                 </DividerDisplay>
                 <DividerDisplay img>
                 <PaperImg src = {image} />
@@ -48,6 +48,7 @@ const PaperContent = () => {
                 date={data.date}
                 author={data.author}
                 image={data.papimage}
+                link={data.link}
               />
             ))}
             </WrapperPaperContent>

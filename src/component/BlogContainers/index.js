@@ -44,7 +44,11 @@ const BlogContainers = ({match}) => {
                         <BlogImage src = {data.imagee} />
                     </BlogWrapped>
                     <BlogWrapped>
-                        <BoxContainer>{data.content}</BoxContainer>
+                        <BoxContainer>{data.content.par1}</BoxContainer> <br/>
+                        <BoxContainer>{data.content.par2}</BoxContainer> <br/>
+                        <BoxContainer>{data.content.par3}</BoxContainer> <br/>
+                        <BoxContainer>{data.content.par4}</BoxContainer> <br/>
+                        <BoxContainer>{data.content.par5}</BoxContainer>
                     </BlogWrapped>
                     <h4>Share To</h4>
                     <RWebShare
