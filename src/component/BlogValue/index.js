@@ -11,7 +11,7 @@ import {
     Blogbtn
 } from "../HomeContent/BlogContent/style";
 
-const ManageBlogValueData = ({ medias, title, description, id }) => {
+const ManageBlogValueData = ({ medias, title, description, }) => {
   return (
     <BlogBox>
       <BoxWrapper>
@@ -20,7 +20,7 @@ const ManageBlogValueData = ({ medias, title, description, id }) => {
         <BoxContainer titlee >{title}</BoxContainer>
         <BoxContainer>{description}</BoxContainer>
         </BlogContainerPart>
-        <BlogContainerPart btn><Blogbtn to = {`/blogscontainer/${id}`}>Continue Reading</Blogbtn></BlogContainerPart>
+        <BlogContainerPart btn><Blogbtn to = {`/blogscontainer/${title}`}>Continue Reading</Blogbtn></BlogContainerPart>
       </BoxWrapper>
     </BlogBox>
   );
@@ -37,7 +37,6 @@ return(
             medias={data.imagee}
             title={data.title}
             description={data.description}
-            id={data.id}
           />
         ))}
         </BlogContainer>

@@ -1,7 +1,5 @@
 import styled from "styled-components";
 import {Link} from "react-router-dom";
-import { FacebookButton, LinkedInButton } from "react-social";
-
 
 export const TitleContent = styled.div`
     font-family: Poppins;
@@ -18,7 +16,7 @@ export const TitleContent = styled.div`
 
 export const BlogWrapped = styled.div`
     text-align: ${props => props.image ? "center" : "left"};
-    margin: ${props => props.image ? "30px 21px 0 15px" : "50px 21px 0 21px"};
+    margin: ${props => props.image ? "30px 21px 0 15px" : "50px 21px 50px 21px"};
     @media screen and (max-width: 740px) {
         text-align: ${props => props.image ? "left" : "left"};
     }
@@ -85,30 +83,16 @@ export const Linked = styled(Link)`
     color: black
 `;
 
-export const FbBtn = styled(FacebookButton)`
-    padding: 8px 14px;
-    margin: 25px 20px;
+export const ShareBtn = styled.button`
+    font-size: 14px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 8px 20px;
     background-color: #3b5998;
-    border-radius: 30px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    color: white;
-    &:hover {
-        transition:0.2s ease-in-out;
-        transform:scale(1.1);
-    }
-`;
-
-export const LinBtn = styled(LinkedInButton)`
-    padding: 8px 14px;
-    margin: 25px 5px;
-    background-color: #0e76a8;
-    border-radius: 30px;
-    outline: none;
-    border: none;
-    color: white;
-    cursor: pointer;
     &:hover {
         transition:0.2s ease-in-out;
         transform:scale(1.1);

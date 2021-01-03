@@ -13,7 +13,7 @@ import {
     BlogContainerPart
 } from "./style"
 
-export const ManageBlogData = ({ medias, title, description, id }) => {
+export const ManageBlogData = ({ medias, title, description,}) => {
     return (
       <BlogBox>
         <BoxWrapper>
@@ -22,7 +22,7 @@ export const ManageBlogData = ({ medias, title, description, id }) => {
           <BoxContainer titlee >{title}</BoxContainer>
           <BoxContainer>{description}</BoxContainer>
           </BlogContainerPart>
-          <BlogContainerPart btn><Blogbtn to = {`/blogscontainer/${id}`}>Continue Reading</Blogbtn></BlogContainerPart>
+          <BlogContainerPart btn><Blogbtn to = {`/blogscontainer/${title}`}>Continue Reading</Blogbtn></BlogContainerPart>
         </BoxWrapper>
       </BlogBox>
     );
@@ -42,7 +42,6 @@ const BlogContent = () => {
                 medias={data.imagee}
                 title={data.title}
                 description={data.description}
-                id={data.id}
               />
             ))}
             </BlogContainer>

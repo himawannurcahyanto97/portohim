@@ -29,7 +29,7 @@ function App() {
         <Route path="/achievement" component={AchPage} exact />
         <Route path="/blog" component={BlogPage} exact />
         <Route path="/galleries" component={GalleryPage} exact />
-        <Route path="/blogscontainer/:id" component={BlogContainers} />
+        <Route path="/blogscontainer/:title" component={BlogContainers} />
         <Route component={NotFoundPage} />
       </Switch>
       <Footer />

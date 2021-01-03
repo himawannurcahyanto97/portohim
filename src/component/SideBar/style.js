@@ -70,7 +70,7 @@ export const SideBtnWrap = styled.div`
   justify-content: center;
 `;
 
-export const SidebarRoute = styled(LinkR)`
+export const SidebarRoute = styled.a`
   padding: 16px 128px;
   font-size: 16px;
   outline: none;

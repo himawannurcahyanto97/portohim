@@ -35,7 +35,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute to="/register" onClick={toggle}>
+          <SidebarRoute href="https://api.whatsapp.com/send/?phone=821094027758&text=Hi%2C+let%E2%80%99s+talk+Himawan%21&app_absent=0" onClick={toggle}>
             Contact
           </SidebarRoute>
         </SideBtnWrap>

@@ -72,7 +72,7 @@ export const NavList = styled(LinkR)`
     }
 `;
 
-export const NavButtonPart = styled(LinkR)`
+export const NavButtonPart = styled.a`
     flex-basis: 25%;
     align-items: center;
     text-align: center;
@@ -94,7 +94,6 @@ export const Navbtn = styled.button`
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
-
     &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;

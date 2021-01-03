@@ -30,8 +30,8 @@ const Navbar = ({toggle}) => {
                     <NavList to = "/blog" >Blog</NavList>
                     <NavList to = "/galleries">Gallery</NavList>
                 </NavListPart>
-                <NavButtonPart>
-                    <a href="wa.me/821094027758?text=Hi, let’s talk Himawan!"><Navbtn>Contact</Navbtn></a>
+                <NavButtonPart href = "https://api.whatsapp.com/send/?phone=821094027758&text=Hi%2C+let%E2%80%99s+talk+Himawan%21&app_absent=0">
+                    <Navbtn>Contact</Navbtn>
                 </NavButtonPart>
             </NavBarContainer>
         </Nav>
