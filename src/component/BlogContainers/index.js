@@ -1,11 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {GlobalContent} from '../GlobalContent';
 import {BlogData} from "../../alldata/BlogContent";
 import { RWebShare } from "react-web-share";
-import {
-    FaFacebookSquare,
-    FaLinkedin
-} from "react-icons/fa";
 import {
     TitleContent,
     BoxContainer,
@@ -30,8 +26,16 @@ const ManageOthArtData = ({image, desc , title}) => {
 }
 
 const BlogContainers = ({match}) => {
+    const [datas, setDatas] = useState([]);
+
     const blogs = BlogData.filter(x => x['title'] == match.params.title)
-    const url = window.location.href;
+    function shuffleArray(array){
+        array.sort(function(){
+            return 0.5-Math.random();
+        });
+    }
+    shuffleArray(BlogData);
+
     return(
         <>
         <GlobalContent>

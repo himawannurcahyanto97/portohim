@@ -4,19 +4,23 @@ import { TitleHomeContent, Viewedin} from "../style";
 import {GalleryValueData} from "../../../alldata/GalleryContent";
 import { BsFillCaretRightFill } from "react-icons/bs";
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import HNLogo from "../../../images/HNLogo.png"
+import HNLogo from "../../../images/HNLogo.png";
 import {
     GalleryContainer,
     GalleryImage,
 } from "./style";
 
-const ManageGalleryData = ({images}) => {
-    return(
-        <GalleryImage src = {images} alt= {images} effect="blur" placeholderSrc={HNLogo}/>
-    );
-};
-
 const GalleryContent = () => {
+    const ManageGalleryData = ({images}) => {
+        return(
+            <GalleryImage 
+                src = {images} 
+                alt= {images} 
+                effect="blur" 
+                placeholderSrc={HNLogo}
+            />
+        );
+    };
     return(
         <GlobalContent>
             <TitleHomeContent recent>Recent Gallery</TitleHomeContent>

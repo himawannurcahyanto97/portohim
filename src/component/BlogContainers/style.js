@@ -33,7 +33,7 @@ export const BoxContainer = styled.div`
 
 export const BlogImage = styled.img`
     z-index: 3;
-    max-width: ${(props) => (props.art ? "125px" : "480px")};
+    width: ${(props) => (props.art ? "125px" : "480px")};
     max-height: ${(props) => (props.art ? "100px" : "335px")};
     @media screen and (max-width: 565px) {
         max-width: ${(props) => (props.art ? "125px" : "100%")};
@@ -43,23 +43,24 @@ export const BlogImage = styled.img`
 
 export const BlogApart = styled.div`
     display: flex;
-    max-height: ${(props) => (props.art ? "146px" : "auto")};
+    height: ${(props) => (props.art ? "133px" : "auto")};
     overflow: ${(props) => (props.art ? "hidden" : "none")};
     border-bottom: ${(props) => (props.art ? "1px solid black" : "none")};
     &:hover {
         transition: ${(props) => (props.art ? "0.2s ease-in-out" : "none")};
         transform: ${(props) => (props.art ? "scale(1.02)" : "none")};
     }
-    @media screen and (max-width: 750px) {
-        max-height: ${(props) => (props.art ? "140px" : "auto")};
+    @media screen and (max-width: 1150px) {
+        height: ${(props) => (props.art ? "118px" : "auto")};
     }
-    @media screen and (max-width: 684px) {
+    @media screen and (max-width: 859px) {
         display: ${(props) => (props.containe ? "block" : "flex")};
     }
 `;
 
 export const BlogDivApart = styled.div`
     flex-basis: ${(props) => (props.contain ? "70%" : "30%")};
+    padding: ${(props) => (props.contain ? "5px" : "2px")};
     margin: 1px 5px;
     align-self: ${(props) => (props.imagart ? "center" : "none")};
 `;

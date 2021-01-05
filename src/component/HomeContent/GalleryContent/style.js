@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { FaTimes } from "react-icons/fa";
 
 export const GalleryContainer = styled.div`
     display: grid;
