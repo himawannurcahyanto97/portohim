@@ -65,7 +65,8 @@ export const BoxContainer = styled.p`
 
 export const BlogImage = styled.img`
     z-index: 3;
-    width: 214px;
+    width: 216px;
+    height: 216px;
     @media screen and (max-width: 610px) {
         width: 95%;
         min-height: 150px
@@ -73,11 +74,11 @@ export const BlogImage = styled.img`
 `;
 
 export const BlogContainerPart = styled.div`
-    flex-basis: ${(props) => (props.btn ? "10%" : "38%")};
+    flex-basis: ${(props) => (props.btn ? "5%" : "38%")};
     overflow: ${(props) => (props.wrt ? "auto" : "none")};
     text-align: ${(props) => (props.wrt ? "none" : "center")};
     padding-top: ${(props) => (props.wrt ? "10px" : "0")};
-    margin-bottom: ${(props) => (props.wrt ? "10px" : "0")};
+    margin-bottom: ${(props) => (props.wrt ? "8px" : "0")};
     @media screen and (max-width: 610px) {
         margin-top: ${(props) => (props.wrt ? "0" : "6px")};
     }
