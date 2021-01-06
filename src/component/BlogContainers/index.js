@@ -26,8 +26,6 @@ const ManageOthArtData = ({image, desc , title}) => {
 }
 
 const BlogContainers = ({match}) => {
-    const [datas, setDatas] = useState([]);
-
     const blogs = BlogData.filter(x => x['title'] == match.params.title)
     function shuffleArray(array){
         array.sort(function(){

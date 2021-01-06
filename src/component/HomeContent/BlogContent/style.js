@@ -69,7 +69,7 @@ export const BlogImage = styled.img`
     height: 216px;
     @media screen and (max-width: 610px) {
         width: 95%;
-        min-height: 150px
+        max-height: 150px;
     }
 `;
 

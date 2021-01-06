@@ -75,7 +75,7 @@ export const ArticlePart = styled.div`
         max-height: 504px;
     }
     @media screen and (max-width: 684px) {
-        max-height: 550px;
+        max-height: 472px;
     }
 `;
 export const Linked = styled(Link)`
