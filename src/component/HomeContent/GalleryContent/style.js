@@ -15,12 +15,12 @@ export const GalleryContainer = styled.div`
         margin: auto;
       }
     @media screen and (max-width: 709px) {
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 49% 49%;
         grid-template-rows: auto;
         grid-gap: 4px;
         padding: 0px;
         margin: 0 auto;
-        height: 575px;
+        height: 560px;
     }
 `;
 
@@ -33,7 +33,7 @@ export const GalleryImage = styled(LazyLoadImage)`
         transform:scale(1.02);
     }
     @media screen and (max-width: 520px) {
-        max-width: 90%;
-        max-height: 75%;
+        max-width: 130px;
+        max-height: 130px;
     }
 `;
