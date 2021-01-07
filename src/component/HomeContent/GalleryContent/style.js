@@ -32,6 +32,10 @@ export const GalleryImage = styled(LazyLoadImage)`
         transition: all 0.2s ease-in-out;
         transform:scale(1.02);
     }
+    @media screen and (max-width: 709px) {
+        max-width: 180px;
+        max-height: 180px;
+    }
     @media screen and (max-width: 520px) {
         max-width: 130px;
         max-height: 130px;
