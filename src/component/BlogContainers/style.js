@@ -33,11 +33,20 @@ export const BoxContainer = styled.div`
 
 export const BlogImage = styled.img`
     z-index: 3;
-    width: ${(props) => (props.art ? "125px" : "480px")};
-    max-height: ${(props) => (props.art ? "100px" : "335px")};
+    width: 400px;
+    max-height: 400px;
     @media screen and (max-width: 565px) {
-        max-width: ${(props) => (props.art ? "125px" : "100%")};
-        max-height: ${(props) => (props.art ? "100px" : "300px")};
+        max-width: 100%;
+        max-height: 300px;
+    }
+`;
+
+export const BlogImageArt = styled.img`
+    width: 100px;
+    max-height: 100px;
+    @media screen and (max-width: 565px) {
+        max-width: 125px;
+        max-height: 100px;
     }
 `;
 

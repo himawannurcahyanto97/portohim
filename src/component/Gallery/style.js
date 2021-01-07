@@ -33,13 +33,13 @@ export const GalleryContainer = styled.div`
 
 export const GalleryImage = styled(LazyLoadImage)`
     width: 190px;
-    position: inherit;
-    height: 187px;
+    height: 190px;
     &:hover {
         transition: all 0.2s ease-in-out;
         transform:scale(1.02);
     }
     @media screen and (max-width: 520px) {
-        max-width: 90%;
+        max-width: 150px;
+        max-height: 150px;
     }
 `;

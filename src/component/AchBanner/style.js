@@ -7,7 +7,6 @@ export const ItemBoxGrid = styled.div`
     padding: 12px;
     width: 65%;
     height: 300px;
-    overflow: auto;
     @media screen and (max-width: 1014px) {
         margin: 0 auto;
         width: 50%;

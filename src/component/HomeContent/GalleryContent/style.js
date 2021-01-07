@@ -29,7 +29,7 @@ export const GalleryContainer = styled.div`
 
 export const GalleryImage = styled(LazyLoadImage)`
     width: 190px;
-    height: 187px;
+    height: 190px;
     position: inherit;
     &:hover {
         transition: all 0.2s ease-in-out;
@@ -37,5 +37,6 @@ export const GalleryImage = styled(LazyLoadImage)`
     }
     @media screen and (max-width: 520px) {
         max-width: 90%;
+        max-height: 75%;
     }
 `;

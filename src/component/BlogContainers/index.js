@@ -11,14 +11,15 @@ import {
     BlogDivApart,
     ArticlePart,
     Linked,
-    ShareBtn
+    ShareBtn,
+    BlogImageArt
 } from "./style";
 
 const ManageOthArtData = ({image, desc , title}) => {
     return(
         <Linked to ={`/blogscontainer/${title}`}>
             <BlogApart art>
-                <BlogDivApart imagart><BlogImage art src={image}/></BlogDivApart>
+                <BlogDivApart imagart><BlogImageArt src={image}/></BlogDivApart>
                 <BlogDivApart contain><BoxContainer>{desc}</BoxContainer></BlogDivApart>
             </BlogApart>
         </Linked>
