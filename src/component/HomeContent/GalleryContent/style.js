@@ -1,16 +1,13 @@
 import styled from "styled-components";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { FaTimes } from "react-icons/fa";
 
 export const GalleryContainer = styled.div`
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto;
     grid-gap: 20px;
-    padding: 12px;
     height: 420px;
     overflow-y: hidden;
-    margin-left: 10px;
     @media screen and (max-width: 1015px) {
         grid-template-columns: auto auto auto;
         grid-template-rows: auto auto;
@@ -18,11 +15,11 @@ export const GalleryContainer = styled.div`
         margin: auto;
       }
     @media screen and (max-width: 709px) {
-        grid-template-columns: 49% 49%;
+        grid-template-columns: 50% 50%;
         grid-template-rows: auto;
-        grid-gap: 5px;
+        grid-gap: 4px;
         padding: 0px;
-        margin: auto;
+        margin: 0 auto;
         height: 575px;
     }
 `;
